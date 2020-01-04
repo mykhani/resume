@@ -11,7 +11,7 @@ naturally, I found the Latex's workflow to be similar and equally enjoyable.
 Since this is my first ever document written in Latex, I have tried to keep it as
 simple as possible, using as less external packages as possible.
 
-# Compiling the Latex
+# Compiling the Latex file
 For compiling the Latex file to the pdf, I have used the Texmaker software running
 on ubuntu. Here's the link: https://www.xm1math.net/texmaker.
 
