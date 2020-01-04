@@ -15,4 +15,7 @@ simple as possible, using as less external packages as possible.
 For compiling the Latex file to the pdf, I have used the Texmaker software running
 on ubuntu. Here's the link: https://www.xm1math.net/texmaker.
 
-Just simply open the tex file in texmaker and run the default "Quick Build" tool.   
+Just simply open the tex file in texmaker and run the default "Quick Build" tool.
+
+# Resume Preview
+![Resume Preview](/resume_preview.png)  
