@@ -5,10 +5,10 @@ hooked.
 
 This might be due to the fact that I have always enjoyed writing documents in the 
 markdown format and there is something about the process of transforming the raw commands
-and text into beautifully formatted documents that I find quite satisfying. So
+and text into beautifully formatted documents, that I find quite satisfying. So
 naturally, I found the Latex's workflow to be similar and equally enjoyable.
 
-Since this is my first ever document written in Latex, I have tried to keep it as
+Since this is my first attempt at writing a document in Latex,written in Latex, I have tried to keep it as
 simple as possible, by using minimum external packages.
 
 # Compiling the Latex file
