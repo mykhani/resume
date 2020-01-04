@@ -8,7 +8,7 @@ markdown format and there is something about the process of transforming the raw
 and text into beautifully formatted documents, that I find quite satisfying. So
 naturally, I found the Latex's workflow to be similar and equally enjoyable.
 
-Since this is my first attempt at writing a document in Latex,written in Latex, I have tried to keep it as
+Since this is my first attempt at writing a document in Latex, I have tried to keep it as
 simple as possible, by using minimum external packages.
 
 # Compiling the Latex file
