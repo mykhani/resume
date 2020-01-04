@@ -4,7 +4,7 @@ into exploring Latex for creating my resume, and as expected, I am instantly
 hooked. 
 
 This might be due to the fact that I have always enjoyed writing documents in the 
-markdown format and there is something about the process of transforming the raw commands
+markdown format, and there is something about the process of transforming the raw commands
 and text into beautifully formatted documents, that I find quite satisfying. So
 naturally, I found the Latex's workflow to be similar and equally enjoyable.
 
