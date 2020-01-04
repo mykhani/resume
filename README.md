@@ -1,6 +1,6 @@
 # Resume using Latex
 Finally after years of using office suites, I have ventured
-into exploring Latex for creating my resume and as expected, I am instantly
+into exploring Latex for creating my resume, and as expected, I am instantly
 hooked. 
 
 This might be due to the fact that I have always enjoyed writing documents in the 
