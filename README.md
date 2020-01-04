@@ -1,5 +1,5 @@
 # Resume using Latex
-Finally after years of using office suites to create my resume, I have ventured
+Finally after years of using office suites, I have ventured
 into exploring Latex for creating my resume and as expected, I am instantly
 hooked. 
 
