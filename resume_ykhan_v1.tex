@@ -1,0 +1,293 @@
+
+% a4 size:  8.27 × 11.69 in
+% letter size: 8.5 x 11 in
+
+\documentclass[a4paper,11pt]{article}
+%\documentclass[letterpaper,12pt]{article}
+
+\usepackage[hidelinks]{hyperref}
+\usepackage{enumitem}
+\usepackage{titlesec}
+
+%Margin setup
+\setlength{\paperwidth}{8.27in}
+\setlength{\paperheight}{11.69in}
+\setlength{\headheight}{0in}
+\setlength{\headsep}{0in}
+\setlength{\textheight}{10.69in}
+\setlength{\topmargin}{-0.5in}
+\setlength{\textwidth}{7.27in}
+\setlength{\topskip}{0in}
+\setlength{\oddsidemargin}{-0.5in}
+\setlength{\evensidemargin}{-0.5in}
+
+% no headers and footers
+\pagestyle{empty}
+% don't add extra spaces
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}
+    {\vspace{-4pt}\scshape\raggedright\large} %format
+    {} %label
+    {0pt} % sep
+    {} % before code
+    [\titlerule \vspace{-5pt}] % after code
+
+% Custom commands
+\newcommand{\work}[4]{
+    \begin{tabular*}{7.1in}{l@{\extracolsep{\fill}}r}
+        \textbf{#1} & #2 \\
+        \textit{#3} & \textit{#4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\degree}[4] {
+    \listitemone
+	\begin{tabular*}{7.1in}{l@{\extracolsep{\fill}}r}
+        \textbf{#1} & #2 \\
+        \textit{#3} & \textit{#4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\liststart}{\begin{itemize}[leftmargin=10pt]}
+\newcommand{\listend}{\end{itemize}}
+\newcommand{\listitemone}{\item}
+\newcommand{\listitemtwo}{\item[$\circ$]}
+
+\newcommand{\skill}[2] {
+    \textbf{#1} #2 \\
+    \vspace {3pt}
+}
+
+\newcommand{\project}[2] {
+    \listitemone
+    \textbf{#1} #2
+    \vspace{-5pt}
+}
+
+\newcommand{\cert}[2] {
+    \listitemone
+	\begin{tabular*}{7.1in}{l@{\extracolsep{\fill}}r}
+	    {#1} & \textit{#2}
+	\end{tabular*}\vspace{-6pt}
+}
+
+
+\begin{document}
+% Heading
+\begin{center}
+    \textbf{\Large MUHAMMAD YASIR KHAN}
+\end{center}
+
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+    \href{https://www.linkedin.com/in/mykhani}{https://www.linkedin.com/		in/mykhani}&
+    
+    Email: \href{mailto: yasir_electronics@yahoo.com}
+                {yasir\_electronics@yahoo.com}\\
+	
+	\href{https://www.github.com/mykhani}
+	     {https://www.github.com/mykhani}&
+	
+	Contact: +852-66106227, Hong Kong
+\end{tabular*}
+
+
+\vspace{0.1in}
+% Education
+\section{Education}
+\begin{itemize}[leftmargin=*]
+    \degree {National University of Sciences \& Technology}
+            {Islamabad, Pakistan}{BE. Electronics Engineering}					        {Oct. 2008 - Aug. 2012}
+        \begin{itemize}[leftmargin=0.2in]
+            \listitemtwo
+                Relevant courses: Embedded Systems, C Programming,
+                Computer Networks, Digital and analog electronics
+                and systems Design, Operating Systems, Microprocessors,
+                Verilog, Signal processing
+        \end{itemize}
+\end{itemize}
+\vspace*{-\baselineskip}
+
+
+\vspace{0.005in}
+% Skills
+\section{Skills}
+\skill{Languages:} {ARM GNU Assembly, C, C++, Python, Bash}
+
+\skill{Software:} {Firmware, Linux kernel/driver development,
+                   RTOS ($\mu  $C/OS-II and FreeRTOS)}
+
+\skill{Hardware:} {Digital and analog circuit design, 
+                   prototyping, system integration, design and 
+                   fabrication of PCB with SMT components, reading 
+                   datasheets and schematics}
+
+\skill{Processors/Platforms:} {ARM Cortex M4, STM32, ESP8266,
+                               Arduino, PIC, AVR, Beaglebone Black}
+
+\skill{Frameworks:} {Qt5, ROS}
+
+\skill{Communication protocols} {MQTT, UART, I2C, SPI, USB}
+
+\skill{Tools:} {Yocto Project, Git, Kicad for PCB design, 
+                various command-line compilation tools, make, cmake}
+
+\skill{Documentation} {Writing technical documents, user guides, reviews}
+
+
+\vspace{0.005in}
+% Certifications
+\vspace{0.005in}
+\section{Certifications}
+\liststart
+    \cert{Robotic Software Engineer Nanodegree Term 1}{Udacity}
+    \cert{ROS for Beginners: Basics, Motion and OpenCV}{Udemy}
+    \cert{Embedded Linux kernel \& driver development}{Mentor Graphics}
+    \cert{ARM Cortex M4 microcontroller programming}{Mentor Graphics}
+    \cert{ARM Assembly Language from Ground Up}{Udemy}
+    \cert{Introduction to RTOS}{Udemy}
+    \cert{Beginner to advanced C++ programming}{Udemy}
+    \cert{Learn advanced C++ programming}{Udemy}
+    \cert{Modern C++ Concurrency in depth}{Udemy}
+\listend
+
+
+\vspace{0.005in}
+% Experience
+\section{Experience}
+\liststart
+\listitemone
+    \work {Nixplay}{Sheung Wan, Hong Kong}
+        {Embedded Software Engineer}{Jan. 2019 - present}
+	    \begin{itemize}[leftmargin=0.2in]
+	        \listitemtwo
+	            Ported a light-weight UI widgets library to a
+	            resource constrained platform for the digital photoframe.
+	        \listitemtwo
+	            Developed a Yocto Linux based platform for 
+	            digital signage.
+	    \end{itemize}
+
+\listitemone
+    \work {The Hong Kong Polytechnic University}{Hung Hom, Hong Kong}
+        {Lead Engineer}{Aug. 2017 - Oct. 2018}
+	    \begin{itemize}[leftmargin=0.2in]
+	        \listitemtwo
+	            Developed hardware and software for an IoT based 
+	            hydroponic farming system.
+	        \listitemtwo
+	            Developed a small size wireless environment sensor board
+	            with SMT components and wrote it's firmware.
+	        \listitemtwo
+	            Developed the nutrient level monitoring and auto 
+	            feed system.
+	        \listitemtwo
+	            Developed the plant imaging system using embedded serial
+	            camera and lenses.
+	        \listitemtwo
+	            Developed the firmware for LED based grow lights.
+	        \listitemtwo
+	            Setup a local IoT webserver for data collection and 
+	            device control.
+	        \listitemtwo
+	            Modified a commercial winekeeper to grow plants inside it.
+	        \listitemtwo
+	            Developed a touch based control panel with UI written 
+	            in Qt5 to control the winekeeper.
+	    \end{itemize}
+
+\listitemone
+    \work {Mentor Graphics}{Lahore, Pakistan}
+        {Sr. Software Development Engineer}{Nov. 2013 - June 2017}
+	    \begin{itemize}[leftmargin=0.2in]
+	        \listitemtwo
+	            Developed customized Embedded Linux using Yocto Project.
+	        \listitemtwo
+	            Developed Yocto Project based Linux BSPs for  
+	            different reference platforms including iMX6Q and 
+	            Xilinx Zynq.
+            \listitemtwo
+                Debugged and resolved Linux system issues.
+            \listitemtwo
+                Became proficient in configuring/patching/compiling
+                the Linux kernel and writing device drivers.
+            \listitemtwo
+                Developed the Mentor's multicore AMP framework for
+                booting the Linux and Nucleus RTOS in parallel on
+                separate cores of a multicore ARM processor with a
+                shared memory based communication channel and 
+                zerocopy transfer.
+            \listitemtwo
+                Contributed in open source community and successfully
+                submitted several patches upstream.
+	    \end{itemize}
+	    
+\listitemone
+    \work {East West Infiniti (Pvt) Ltd.}{Islamabad, Pakistan}
+        {System Design Engineer}{Oct. 2012 - Oct. 2013}
+	    \begin{itemize}[leftmargin=0.2in]
+	        \listitemtwo
+	            Worked on developing an autonomous airboat. 
+	            Integrated various on-board sensors and wrote the PID
+	            based control software for the GPS navigation.
+	        \listitemtwo
+	            Developed the SONAR based sea tide measurement system.
+	        \listitemtwo
+	            Added the wireless connectivity to different 
+	            products using WiFi, Zigbee and GPRS.
+	        \listitemtwo
+	            Designed electronic circuits and wrote firmware 
+	            for the company's numerous projects. 
+	            
+	    \end{itemize}
+\listend
+\vspace*{-\baselineskip}
+
+
+\vspace{0.005in}
+% Projects
+\section{Projects}
+\liststart
+\project{Udacity Robotic Software Engineer Term 1:}
+        {Image processing using OpenCV, inverse kinematic analysis
+         of a multi-DOF arm, 3D point cloud object detection and 
+         classification using SVM algorithm, training neural networks
+         and Fully Convolutional Network based object tracking.}
+
+\project{Embedded Linux using Yocto Project:} 
+        {Developed customized Embedded Linux systems for
+         multiple processor boards using Yocto Project.
+         Developed Linux user­space applications, libraries and 
+         kernel drivers.}
+         
+\project{Beaglebone Green Roadtest:}
+        {Submitted a successful proposal to participate as a reviewer
+         in the Beaglebone Green roadtest program conducted by Element14.
+         As a part of the test, explored creating a robotics development
+         platform based on Beaglebone Green running ROS and the Grove
+         connector system of the Beagleboard Green. Submitted
+         a detailed report on the Element14 community website after
+         completion which has received the highest user rating out of 
+         all the submissions in the same program.}
+
+\project{IoT based hydroponic farming:} 
+        {Developed the hardware and software for IoT based 
+         hydroponic farming system. Wrote RTOS based firmware
+         for custom designed wireless environment sensor, 
+         LED control and automatic nutrient monitoring and control
+         system. Setup a local IoT webserver based on ThingsBoard. 
+         Also developed the touch control panel for the device based
+         on Qt5 and Linux.}
+         
+\project{Autonomous airboat:} 
+        {Worked on the development of an airboat including its mechanical
+         assembly and electronics. Integrated on-­board electronics
+         and sensors and implemented a PID based control software
+         for GPS navigation. Conducted extensive experimental testing
+         of the boat in a public lake.}
+\listend
+
+\end{document}
