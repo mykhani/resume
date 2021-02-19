@@ -21,8 +21,8 @@ Just simply open the tex file in texmaker and run the default "Quick Build" tool
 
 # Resume Preview
 
-![Resume Preview 1](/resume_preview_1.png)
-![Resume Preview 2](/resume_preview_2.png)
+![Resume Preview 1](/resume_preview-1.png)
+![Resume Preview 2](/resume_preview-2.png)
 
 <object data="resume_ykhan_v1.pdf" type="application/pdf" width="700px" height="700px">
     <embed src="resume_ykhan_v1.pdf">
