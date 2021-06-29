@@ -103,10 +103,7 @@
             {Islamabad, Pakistan}{BE. Electronics Engineering}{Oct. 2008 - Aug. 2012}
         \begin{itemize}[leftmargin=0.2in]
             \listitemtwo
-                Relevant courses: Embedded Systems, Embedded C,
-                Computer Networks, Digital and Analog Electronics
-                and Systems Design, Operating Systems, Microprocessors,
-                Verilog, Signal Processing
+                Relevant courses: Embedded Systems, Computer Networks, Digital and Analog Electronics, Power Electronics, FPGA based design, Computer Architecture, Fundamentals of Programming, Operating Systems, Digital Signal Processing, Calculus, Linear Algebra, Numerical Analysis
         \end{itemize}
 \end{itemize}
 \vspace*{-\baselineskip}
@@ -115,20 +112,19 @@
 \vspace{0.005in}
 % Skills
 \section{Skills}
-\skill{Languages:} {ARM GNU Assembly, C, C++ (11), JavaScript (ES6), Python}
+\skill{Languages:} {C, C++ (17), JavaScript (ES6), Python, ARM assembly}
 
-\skill{Software:} {Firmware, customized Embedded Linux distribution, Linux kernel/driver development, 					   Linux device-tree and BSP work, u-boot customization,  
-                   embedded application development on RTOS ($\mu  $C/OS- 	 	               II and FreeRTOS), source management using Git}
+\skill{Software:} {Microcontrollers, Linux (system programming, application development, device drivers, porting, board support, Yocto), RTOS (FreeRTOS), GUI applications using Qt5, Git, Object Oriented Programming, Datastructures \& Algorithms, Web applications}
 
 \skill{Hardware:} {PCB design and development, Electronic circuit design,               use of electronic tools (digital logic analyzer, oscilloscope),
                    electronic prototyping, reading
                    datasheets, manuals and schematics}
 
-\skill{Processors/Platforms:} {ARM Cortex M4, STM32, ESP8266, Beaglebone Black}
+\skill{Processors/Platforms:} {ARM Cortex M4, STM32, ESP8266, Beaglebone Black, RaspberryPi}
 
-\skill{SDK/Frameworks:} {Yocto Project, STM32CubeMX, ESP IDF, ROS}
+\skill{SDK/Frameworks:} {Yocto Project, Qt5, STM32CubeIDE, ROS, React, Redux, NodeJS}
 
-\skill{Communication protocols} {TCP/IP sockets, MQTT, UART, I2C, SPI, USB}
+\skill{Communication protocols} {Sockets programming, AJAX, REST API, UART, I2C, SPI, USB}
 
 \skill{Tools:} {Kicad (PCB design), Linux command-line tools for 	  	 		            compilation, make, cmake}
 
@@ -149,7 +145,7 @@
     \cert{\href{https://www.udemy.com/certificate/UC-A7SUDAR3/}				          {Introduction to RTOS}}{Udemy}
     \cert{\href{https://www.udemy.com/certificate/UC-b6b01a07-f2f0-4e2f-add1-37981acecf1f/}{The Complete JavaScript Course 2021}}{Udemy}
     \cert{\href{https://www.udemy.com/certificate/UC-11f326fc-276b-4cee-b3bf-1cb8c1529cc1/}{2021 Complete Python Bootcamp}}{Udemy}
-    \cert{ROS for Beginners: Basics, Motion and OpenCV}{Udemy}
+    \cert{\href{https://www.educative.io/verify-certificate/2gKmzmJrwV3t0nlLzJ4pOKfL75574oplqc3}{Web Application \& Software Architecture}}{Educative}
 \listend
 
 
@@ -162,11 +158,13 @@
         {Embedded Software Engineer}{Jan. 2019 - present}
 	    \begin{itemize}[leftmargin=0.2in]
 	        \listitemtwo
-	            Developed a multi-threaded firmware for a more responsive 					digital photo frame and resolved multimedia playback issues.
+	            Developed a multi-threaded firmware for the digital photo frame. Debugged and resolved multimedia (photo, video) related issues. Programmed in C for Allwinner's Melis RTOS platform.
 	        \listitemtwo
-	            Developed a customized Linux OS with web browser engine enabled for internet-connected digital frames based on custom hardware.
+	            Developed a Yocto based Linux platform with QtWebengine (based on chromium browser) support, as an alternative to the existing Android platform, for our cloud connected devices. Worked with Linux graphics, display and multimedia (GStreamer) frameworks and ported Android kernel changes to the Linux.
 	        \listitemtwo
-	            Developed the application using Qt5, QML and JavaScript, running on the above platform.
+	            Ported the above Linux OS on different embedded boards. Prepared the Linux device tree and kernel configuration. Configured and enabled MIPI LCD displays, GPIO, touch and board-specific drivers.
+	        \listitemtwo
+	            Developed a test application using Qt5, QML and JavaScript, running on the above platform.
 	    \end{itemize}
 
 \listitemone
@@ -174,21 +172,20 @@
         {Lead Engineer}{Aug. 2017 - Oct. 2018}
 	    \begin{itemize}[leftmargin=0.2in]
 	        \listitemtwo
-	            Developed hardware and software for an IoT based 
-	            hydroponic farming system.
+	            Developed the hardware and software for an IoT based 
+	            hydroponic farming system research project.
 	        \listitemtwo
-	            Designed and fabricated a small footprint wireless environment sensor board
-	            with SMT components and wrote it's firmware.
+	            Designed and fabricated a small wireless environment sensor board with SMT components.
 	        \listitemtwo
-	            Developed the nutrient level monitoring and auto-feed 
-	            system.
+	            Developed a nutrient level monitoring and adjustment 
+	            system, based on RaspberryPi and off-the-shelf sensors.
 	        \listitemtwo
 	            Developed the plant imaging system using embedded serial
-	            camera and lens assembly.
+	            camera and customized lens assembly.
 	        \listitemtwo
 	            Developed the firmware for LED based grow lights.
 	        \listitemtwo
-	            Setup a local IoT server for data collection and 
+	            Setup a local MQTT server for data collection and 
 	            device control.
 	        \listitemtwo
 	            Modified a commercial wine keeper to grow plants inside it.
@@ -202,7 +199,7 @@
         {Sr. Software Development Engineer}{Nov. 2013 - June 2017}
 	    \begin{itemize}[leftmargin=0.2in]
 	        \listitemtwo
-	            Developed customized Embedded Linux using Yocto Project.
+	            Developed customized Embedded Linux systems using Yocto Project.
 	        \listitemtwo
 	            Developed Yocto Project based Linux BSPs for  
 	            different hardware platforms including iMX6Q and 
@@ -249,38 +246,30 @@
 % Projects
 \section{Projects}
 \liststart
-\project{Firmware for Digital Photo Frame:}
-        {Wrote a multi-threaded firmware for a mass-produced consumer electronic device capable of multimedia playback. Resolved multimedia issues and utilized the limited resources efficiently to create a responsive user experience.}
 
-\project{Embedded Linux using Yocto Project:} 
-        {Developed customized Embedded Linux systems for
-         multiple processor boards using Yocto Project.
-         Developed Linux user­space applications, libraries and 
-         kernel drivers.}
+\project{Custom USB device and its Linux driver:}
+        {Developed a custom USB device on ARM cortex-M4
+         based Texas Instruments TM4C123G microcontroller.     
+         TM4C123G USB controller provides USB OTG
+         functionality but it was programmed to be in the device mode.
+         Wireshark was used to observe USB packets during USB enumeration,
+         configuration and data transfer phases. Two endpoints (IN and OUT) were configured on the device side to communicate with the USB host during
+         interrupt transfers. Finally, wrote a Linux driver to communicate
+         with the device. Link to source: \textbf {http://github.com/mykhani/usbdev} }
 
 \project{STM32RTOS:}
-        {My personal project of creating an RTOS from scratch for STM32 series ARM Cortex M4 microcontrollers. See https://github.com/mykhani/STM32RTOS for details and the features implemented so far (priority based scheduling, build system).}
+        {My personal project of creating an RTOS from scratch for STM32 series ARM Cortex M4 microcontrollers. See \textbf {https://github.com/mykhani/STM32RTOS} for details and the features implemented so far (priority based scheduling, build system).}
 
 \project{IoT based hydroponic farming:} 
-        {Developed the hardware and software for IoT based 
+        {Developed a prototype for IoT based 
          hydroponic farming system. Wrote RTOS based firmware
-         for custom designed wireless environment sensor, 
-         LED control and automatic nutrient monitoring and control
-         system. Setup a local IoT web server based on ThingsBoard. 
-         Also developed the touch control panel for the device based
-         on Qt5 and Linux.}
+         for the system components; including a custom designed wireless environment sensor, 
+         LED grow light brightness and color control, and automatic nutrient monitoring/feeding
+         system. Also setup a local mqtt web server to listen in on the field devices and store the transmitted data.}
          
 \project{Beaglebone Green Product Review:}
-        {Participated as a reviewer
-         in the Beaglebone Green roadtest program conducted by Element14.
-         As a part of the test, explored creating a robotics development
-         platform based on Beaglebone Green running ROS and the Grove
-         connector system of the Beagleboard Green. Submitted
-         a detailed report on the Element14 community website.}
-         
-\project {Technical Blogs:}
-         {Here's the link to my medium profile where I've written few technical blogs, including the above mentioned Beaglebone Green product review. \textbf {https://medium.com/@yasir.gandapur}}
-         
+        {Reviewed the BeagleBone Green board for Element14. Explored creating a platform for robotics based development using Beaglebone Green, Robot Operating System (ROS), and the Grove connector system of the Beagleboard Green. The review and some of my other technical blogs can be read at \textbf {https://medium.com/@yasir.gandapur}}
+                  
 \project{Autonomous air-boat:} 
         {Worked on the development of an air-boat including its mechanical
          assembly and electronics. Integrated electronics
